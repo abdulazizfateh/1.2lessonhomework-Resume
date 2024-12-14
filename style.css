@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+@font-face {
+    font-family: RC600;
+    src: url(./fonts/RobotoCondensed-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: RC400;
+    src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
+
+
+.container {
+    max-width: 1440px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.section-autob {}
+
+.autob-wrapper {
+    display: flex;
+    align-items: start;
+}
+
+.autob-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background-color: #434345;
+    border-radius: 50px 0px 0px 50px;
+    padding: 30px 40px 45px 40px;
+    transition: 1.5s;
+
+    &:hover {
+        background-color: #303030;
+    }
+}
+
+.autob-left-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.autob-left-about {
+    width: 100%;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.autob-left-about-text {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    font-family: RC600;
+    margin-bottom: 20px;
+}
+
+.autob-left-about-desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+    opacity: 0.85;
+}
+
+.autob-left-links {
+    width: 100%;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.autob-left-links-text {
+    font-family: RC600;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.autob-left-links-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.autob-left-links-items-top {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.autob-left-links-items-bottom {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.autob-left-links-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+}
+
+.autob-left-links-item-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.85;
+    font-weight: 300;
+}
+
+.autob-left-hobbies {
+    width: 100%;
+}
+
+.autob-left-hobbies-text {
+    font-family: RC600;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.autob-left-hobbies-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.autob-left-hobbies-item {
+    opacity: 0.85;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.autob-right {
+    width: 67%;
+    padding: 60px 40px 130px 40px;
+}
+
+.autob-right-name-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.right-name {
+    width: 40%;
+}
+
+.right-title {
+    font-size: 70px;
+    line-height: 1.05;
+    margin-bottom: 4px;
+}
+
+.right-title-desc {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: RC400;
+    opacity: 0.7;
+    padding-left: 3px;
+    margin-top: 6px;
+}
+
+.right-address {
+    width: 30%;
+}
+
+.right-address-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.right-address-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.right-address-text {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: rgb(133, 133, 133);
+    }
+
+    &:active {
+        color: rgb(148, 148, 148);
+    }
+}
+
+.right-address-middle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.right-address-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.autob-right-education {
+    margin-bottom: 40px;
+}
+
+.right-education-text {
+    font-family: RC600;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.right-education-desc {
+    width: 90%;
+    line-height: 1.4;
+}
+
+
+
+
+.autob-right-skills {
+    margin-bottom: 40px;
+}
+
+.right-skills-text {
+    font-family: RC600;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.autob-right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-skills-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    width: 45%;
+}
+
+.right-skills-left-item {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 7px solid #434345;
+}
+
+.right-skills-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.right-skills-right-item {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 7px solid #434345;
+}
+
+.autob-right-languages {}
+
+.right-lan-title {
+    font-family: RC600;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.right-lan-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.right-lan-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 45%;
+}
+
+.right-lan-item {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 7px solid black;
+}
+
+.right-lan-right {
+    width: 45%;
+}
+
+.right-lan-russian {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+.right-lan-english {
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+.lan-elevel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lan-eon {
+    width: 400px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lan-eoff {
+    width: 200px;
+    height: 7px;
+    background-color: rgb(188, 188, 188);
+}
+
+
+.lan-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lan-on {
+    width: 100px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lan-off {
+    width: 300px;
+    height: 7px;
+    background-color: rgb(188, 188, 188);
+}
